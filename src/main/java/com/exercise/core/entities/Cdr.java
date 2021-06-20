@@ -55,7 +55,7 @@ public class Cdr {
     private Date call_end;
 
     @Column
-    private long duration;
+    private double duration;
 
     @Column
     private String recording;
@@ -158,11 +158,11 @@ public class Cdr {
         this.call_end = call_end;
     }
 
-    public long getDuration() {
+    public double getDuration() {
         return duration;
     }
 
-    public void setDuration(long duration) {
+    public void setDuration(double duration) {
         this.duration = duration;
     }
 
